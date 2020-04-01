@@ -1,7 +1,7 @@
 # Udacity Capstone Project - Cloud DevOps Engineer 
 
-> This is the final project of the Udacity Cloud DevOps Engineer Nanodegree. 
-> It showcases the relevant knowledge and required skills for the Cloud DevOps space.
+This is the final project of the Udacity Cloud DevOps Engineer Nanodegree. 
+It showcases the relevant knowledge and required skills for the Cloud DevOps space.
 
 ## Project Tasks include:
 
@@ -17,7 +17,7 @@
 
 ## About this Project: 
 
-> CI/CD pipelines for a basic website that will be deployed to an AWS EKS cluster (Blue/Green Deployment).
+CI/CD pipelines for a basic website that will be deployed to an AWS EKS cluster (Blue/Green Deployment).
 
 ![img-1](Images/Project-Pipelines.png)
 
