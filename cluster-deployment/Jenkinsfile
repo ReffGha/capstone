@@ -1,0 +1,40 @@
+pipeline {
+	agent any
+	stages {
+
+		stage('Create EKS cluster') {
+			steps {
+				withAWS(region:'eu-central-1', credentials:'JenkinsUser') {
+					sh '''
+						eksctl create cluster \
+						--name UdacityEKSCluster\
+						--version 1.13 \
+						--nodegroup-name standard-workers \
+						--node-type t2.small \
+						--nodes 2 \
+						--nodes-min 1 \
+						--nodes-max 3 \
+						--node-ami auto \
+						--region eu-central-1 \
+						--zones eu-central-1a \
+						--zones eu-central-1b \
+						--zones eu-central-1c \
+					'''
+				}
+			}
+		}
+
+		
+
+		stage('Initialize EKS cluster') {
+			steps {
+				withAWS(region:'eu-central-1', credentials:'JenkinsUser') {
+					sh '''
+						aws eks --region eu-central-1 update-kubeconfig --name UdacityEKSCluster
+					'''
+				}
+			}
+		}
+
+	}
+}
