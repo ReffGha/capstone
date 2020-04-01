@@ -44,6 +44,7 @@
 * Pipeline-AWS Plugin
 * Docker
 * Pip
-* AWS Cli
-* Kubectl
+* AWS Cli V2
+* kubectl
+* eksctl
 
