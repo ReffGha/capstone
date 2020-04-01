@@ -13,7 +13,7 @@ pipeline {
 				withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD']]){
 					sh '''
 						pwd
-						docker build -t reffatg/capstone ./application-deployment/Dockerfile
+						docker build -t reffatg/capstone ./application-deployment
 					'''
 				}
 			}
