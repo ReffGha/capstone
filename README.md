@@ -47,4 +47,5 @@
 * AWS Cli V2
 * kubectl
 * eksctl
+* tidy
 
