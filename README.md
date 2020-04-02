@@ -24,8 +24,8 @@ CI/CD pipelines for a basic website that will be deployed to an AWS EKS cluster 
 
 ## Project files:
 ```sh
-* /application-deployment : Deployment Script of Containers Pipeline file
-* /clusters-deployment : CloudFormation Script of Cluster Pipeline file 
+* /application-deployment : Jenkinsfile for Container App Pipeline
+* /clusters-deployment : Jenkinsfile for EKS Cluster creation and initialization Pipeline 
 * /Images : All screenshots showing installation and execution.
 * Jenkinsfile : Jenkinsfiles for Pipeline creation
 * Dockerfile : Dockerfile for building the NGINX image 
