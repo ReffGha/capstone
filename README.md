@@ -37,14 +37,14 @@ CI/CD pipelines for a basic website that will be deployed to an AWS EKS cluster 
 ```
 ## Tool Requirements:
 
-> Installation requriements for CI/CD Pipeline:
+Installation requriements for CI/CD Pipeline:
 
 * Jenkins (requries JAVA)
 * Blue Ocean Plugin
 * Pipeline-AWS Plugin
 * Docker
-* Pip
-* AWS Cli V2
+* Add jenkins user to Docker Group
+* AWS Cli V2 (V1 installed via pip is not sufficient)
 * kubectl
 * eksctl
 * tidy
